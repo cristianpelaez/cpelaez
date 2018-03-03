@@ -1,4 +1,170 @@
-html{
-    font-family: 'Montserrat', sans-serif;
+/* General */
+html, body{
+    font-family: 'Montserrat', sans-serif !important;
     color: #4A5764;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li,nav,span,section,div{
+    margin: 0;
+    padding: 0;
+}
+.paragraph{
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.title{
+    font-size: 32px;
+    color; #4A5764;
+    margin: 90px 0 30px 0;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.title.light-title{
+    font-size: 32px;
+    color: #fff;
+}
+
+.title:before{
+    content: "¿QUIÉNES SOMOS?";
+    position: absolute;
+    top: -38px;
+    right: 0;
+    left: 0;
+    font-size: 56px;
+    opacity: 0.1;
+}
+
+/* Main Section - Dark Section */
+
+.main-section{
+    background: url(../images/background.png) no-repeat;
+    background-size: cover;    
+    height: 550px;
+    color: #fff;
+}
+header .logo{
+    margin-top: 40px;
+}
+header nav{
+    margin: 20px 0 10px 0;
+    text-align: right;
+}
+header nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav li a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .1s ease-in-out;
+    padding: 10px;
+
+}
+nav li a:hover{
+    color: #fff;
+    border-bottom: 3px solid #3899FF;
+    text-decoration: none;
+}
+.heading{
+    margin-top: 50px;
+}
+.heading .headline{
+    font-size: 30px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.heading .random-title{
+    font-size: 52px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.heading .cta{
+    color: #fff;
+    background-color: #3899FF;
+    border: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px #03245f94;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.heading .cta:hover{
+    background-color: #3082d8;
+    box-shadow: 0 8px 12px #03245f94;
+}
+
+.heading .cta:hover, .cta:visited, .cta:focus{
+    background-color: #3082d8;
+    outline: none;
+}
+
+.shadows{
+    position: relative;
+}
+
+.shadows .freestyler1{
+    position: absolute;
+    top: 0;
+    left: -60px;
+}
+
+.shadows .freestyler2{
+    position: absolute;
+    right: -180px;
+    bottom: -431px;
+}
+
+/* Section "Quienes Somos" */
+
+.about{
+    height: 430px;
+    background: #202C42;
+    color: #fff;
+    text-align: center;
+}
+
+.about span{
+    font-size: 22px;
+}
+/* Services Section */
+
+.services{
+    text-align: center;
+    background-color: #F2F2F2; 
+}
+.services .title:before{
+    content: "NUESTROS SERVICIOS";
+}
+
+.services .collage, .services-list{
+    margin: 60px 0;
+}
+
+.services-list{
+    text-align: left;
+    font-size: 20px;
+}
+
+.gallery .title:before{
+    content: "GALERÍA DE FOTOS";
+}
+
+.contact .title:before{
+    content: "CONTACTO";
 }
