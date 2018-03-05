@@ -7,15 +7,22 @@ h1,h2,h3,h4,h5,h6,p,ul,li,nav,span,section,div{
     margin: 0;
     padding: 0;
 }
+section{
+    padding: 90px 0;
+}
 .paragraph{
     font-size: 16px;
     line-height: 1.4;
+    text-align: center;
+    width: 760px;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .title{
     font-size: 32px;
     color; #4A5764;
-    margin: 90px 0 30px 0;
+    margin: 0 0 30px 0;
     line-height: 1.5;
     font-weight: 600;
     text-transform: uppercase;
@@ -133,7 +140,6 @@ nav li a:hover{
 /* Section "Quienes Somos" */
 
 .about{
-    height: 430px;
     background: #202C42;
     color: #fff;
     text-align: center;
@@ -167,4 +173,10 @@ nav li a:hover{
 
 .contact .title:before{
     content: "CONTACTO";
+}
+.images{
+    padding: 15px 0;
+}
+.images img{
+    width: 100%;
 }
