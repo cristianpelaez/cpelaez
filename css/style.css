@@ -10,6 +10,40 @@ h1,h2,h3,h4,h5,h6,p,ul,li,nav,span,section,div{
 section{
     padding: 90px 0;
 }
+
+.cta{
+    color: #fff;
+    background-color: #3899FF;
+    border: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px #03245f94;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cta:hover{
+    background-color: #3082d8;
+    box-shadow: 0 8px 12px #03245f94;
+}
+
+.cta:hover, .cta:visited, .cta:focus{
+    background-color: #3082d8;
+    outline: none;
+}
+
+.cta.cta-light{
+    box-shadow: 0 4px 6px #03245f34;
+    margin-top: 20px;
+}
+.cta-light:hover{
+    box-shadow: 0 8px 12px #03245f34;
+}
+
 .paragraph{
     font-size: 16px;
     line-height: 1.4;
@@ -18,11 +52,14 @@ section{
     margin: 0 auto;
     padding-bottom: 20px;
 }
+.paragraph.light{
+    color: #fff;
+}
 
 .title{
     font-size: 32px;
     color; #4A5764;
-    margin: 0 0 30px 0;
+    margin: 0 0 45px 0;
     line-height: 1.5;
     font-weight: 600;
     text-transform: uppercase;
@@ -43,6 +80,19 @@ section{
     left: 0;
     font-size: 56px;
     opacity: 0.1;
+}
+
+.title:after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    border-radius: 8px;
+    background-color: #3899FF;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    left: 50%;
+    margin-left: -35px;
 }
 
 /* Main Section - Dark Section */
@@ -96,30 +146,6 @@ nav li a:hover{
     padding-bottom: 20px;
     text-transform: uppercase;
 }
-.heading .cta{
-    color: #fff;
-    background-color: #3899FF;
-    border: none;
-    font-size: 18px;
-    padding: 12px 30px;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px #03245f94;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    transition: background-color .3s ease-in-out;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.heading .cta:hover{
-    background-color: #3082d8;
-    box-shadow: 0 8px 12px #03245f94;
-}
-
-.heading .cta:hover, .cta:visited, .cta:focus{
-    background-color: #3082d8;
-    outline: none;
-}
 
 .shadows{
     position: relative;
@@ -161,12 +187,26 @@ nav li a:hover{
 .services .collage, .services-list{
     margin: 60px 0;
 }
-
+.collage img{
+    width: 100%;
+}
 .services-list{
     text-align: left;
     font-size: 20px;
+    list-style: none;
+    padding-left: 80px !important;
+    margin-top: 110px;
 }
-
+.services-list li{
+    padding-bottom: 16px;
+}
+.services-list span{
+    padding-right: 15px;
+    color: #3899FF;
+}
+.gallery{
+    text-align: center;
+}
 .gallery .title:before{
     content: "GALERÍA DE FOTOS";
 }
@@ -179,4 +219,58 @@ nav li a:hover{
 }
 .images img{
     width: 100%;
+}
+
+.contact .social{
+    color: #fff;
+    list-style: none;
+    text-align: center;
+}
+.social li{
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+    transition: all .3s ease-in-out;
+}
+.social i{
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.social li:hover i {
+    color: #3899FF;
+}
+.social li:hover{
+    border-color: #3899FF;
+}
+
+.contact .phone_numbers{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+.phone_numbers span{
+    padding: 20px;
+}
+.phone_numbers i{
+    padding-right: 12px;
+}
+
+.copyright{
+    padding: 20px 0;
+    background: #001A28;
+    color: #fff;
+    text-align: center;
+}
+.copyright .paragraph{
+    padding: 0;
+}
+footer{
+    background-color: #202C42;
 }
