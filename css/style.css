@@ -29,11 +29,15 @@ section{
 .cta:hover{
     background-color: #3082d8;
     box-shadow: 0 8px 12px #03245f94;
+    color: #fff;
+    text-decoration: none;
 }
 
 .cta:hover, .cta:visited, .cta:focus{
     background-color: #3082d8;
     outline: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .cta.cta-light{
@@ -130,6 +134,11 @@ nav li a:hover{
     border-bottom: 3px solid #3899FF;
     text-decoration: none;
 }
+
+nav li a:active, a:visited{
+    text-decoration: none;
+    color: #fff;
+}
 .heading{
     margin-top: 50px;
 }
@@ -206,6 +215,9 @@ nav li a:hover{
 }
 .gallery{
     text-align: center;
+}
+.gallery-images{
+    margin-bottom: 30px;
 }
 .gallery .title:before{
     content: "GALERÍA DE FOTOS";
