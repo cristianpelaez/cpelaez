@@ -5,29 +5,32 @@
       <meta charset="utf-8"/>
       <title>Freestyle Barranquilla</title>
       <meta name="description" content="Actividades de Fútbol Freeestyle en Barranquilla/Colombia.">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-      <style type="text/css"></style>
       <link rel=stylesheet href="css/style.css" type="text/css"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-      <script type="text/javascript"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="global.js"></script>
    </head>
 
    <body>
-        <div class="main-section">
+       <header class="row">
+           <div class="container">
+                <h1 class="logo col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                    <img src="images/logo.svg" alt="">
+                </h1>
+                <nav class="logo col-lg-6 col-md-6 col-sm-8 hidden-xs">
+                    <li><a id="home">Inicio</a></li>
+                    <li><a id="services_option">Servicios</a></li>
+                    <li><a id="gallery_option">Galeria</a></li>
+                    <li><a id="contact_option">Contacto</a></li>
+                </nav>
+            </div>
+        </header>
+        <div class="main-section" id="#main">
             <div class="container">
-                <header class="row">
-                    <h1 class="logo col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img src="images/logo.svg" alt="">
-                    </h1>
-                    <nav class="logo col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Llámanos</a></li>
-                    </nav>
-                </header>
                 <div class="row">
                     <div class="heading col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <p class="headline">Disfruta de los </br> mejores shows de:</p>
@@ -36,7 +39,7 @@
                     </div>
                     <div class="shadows col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <img class="freestyler1" src="images/freestyler1.png" alt="">
-                        <img class="freestyler2" src="images/freestyler2.png" alt="">
+                        <img class="freestyler2 hidden-xs" src="images/freestyler2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -50,7 +53,7 @@
                 <span>¡Contáctanos y disfruta de nuestros excelentes servicios!</span>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h3 class="title">Nuestros Servicios</h3>
                 <p class="paragraph">
@@ -69,7 +72,7 @@
                 </ul>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h3 class="title">Galería de Fotos</h3>
                 <p class="paragraph">
@@ -93,7 +96,7 @@
             </div>
         </section>
         <footer>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <h3 class="title light-title">Contacto</h3>
                     <p class="paragraph light">
