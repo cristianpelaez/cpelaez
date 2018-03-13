@@ -122,11 +122,25 @@ header .logo{
 }
 header .logo img{
     width: 206px;
-    transition: all .1s ease-in-out;
+}
+
+.header-fixed img{
+    transition: all .3s ease-in;
 }
 
 header{
     transition: all .3s ease-in-out;
+}
+
+header .cel_icon{
+    display: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 12px;
+    text-align: right;
+}
+header .cel_icon:hover{
+    color: #3899FF;
 }
 
 header nav{
@@ -303,8 +317,14 @@ nav li a:active, a:visited{
     font-size: 28px;
     text-align: center;
 }
-.phone_numbers span{
+.phone_numbers a{
     padding: 20px;
+    transition: all .3s ease-in-out;
+    color: #fff;
+}
+.phone_numbers a:hover{
+    color: #7ebdff;
+    text-decoration: none;
 }
 .phone_numbers i{
     padding-right: 12px;
@@ -374,14 +394,14 @@ footer{
         text-align: center;
     }
     .header-fixed .logo img{
-        width: 160px;
+        width: 130px;
     }
     .title, .title.light-title {
-        font-size: 28px;
+        font-size: 20px;
     }
     .title:before{
         top: -18px;
-        font-size: 35px;
+        font-size: 26px;
     }
     section {
         padding: 60px 0;
@@ -402,10 +422,33 @@ footer{
     .contact .phone_numbers span{
         padding: 10px;
     }
+    .cta{
+        font-size: 16px;
+    }
+    .copyright .paragraph{
+        font-size: 14px;
+    }
+     .header-fixed h1{
+        text-align: left;
+        padding: 0;
+    }
+    .header-fixed .container{
+        padding: 0;
+    }
+    .header-fixed .cel_icon{
+        display: initial;
+    }
+    .about span{
+        font-size: 18px;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 560px) {
     #services .services-list{
+        font-size: 14px;
+    }
+    .cta{
         font-size: 14px;
     }
 }
