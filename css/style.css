@@ -136,10 +136,11 @@ header .cel_icon{
     display: none;
     color: #fff;
     font-size: 18px;
-    margin-top: 12px;
-    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
-header .cel_icon:hover{
+header .cel_icon:hover, header .cel_icon:visited{
     color: #3899FF;
 }
 
@@ -322,7 +323,7 @@ nav li a:active, a:visited{
     transition: all .3s ease-in-out;
     color: #fff;
 }
-.phone_numbers a:hover{
+.phone_numbers a:hover, .phone_numbers a:visited{
     color: #7ebdff;
     text-decoration: none;
 }
@@ -450,5 +451,9 @@ footer{
     }
     .cta{
         font-size: 14px;
+    }
+    .phone_numbers a{
+        padding: 10px;
+        display: block;
     }
 }
