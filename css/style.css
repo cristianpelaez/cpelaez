@@ -178,7 +178,7 @@ nav li a:active, a:visited{
 /* Main Section - Dark Section */
 
 .main-section{
-    background: url(../images/background.png) no-repeat;
+    background: #023262 url(../images/background.png) no-repeat;
     background-size: cover;    
     padding-top: 118px;
     height: auto;
